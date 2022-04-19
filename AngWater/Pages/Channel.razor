@@ -1,6 +1,7 @@
 ﻿@page "/channel"
 @layout EmptyLayout
 
+<div class="tr-vh-100">
 
 <div class="row mx-auto">
     <div class="col-12 col-lg-2">
@@ -38,42 +39,27 @@
 
 </div>
 
-@*<div class="row">
-    <div class="col-8">
-        <iframe src="https://video.ibm.com/embed/24088760?autoplay=true" style="border:0;" width="480" height="270"  title="Anglan water"></iframe>
-    </div>
-
-    <div class="col-4">
-        <iframe src="https://video.ibm.com/socialstream/24088760?videos=0&amp;theme=g10&amp;messageVerticalSpacing=default&amp;mainLinkColor=0f62fe&amp;moderatorNameColor=d12771" style="border: 0;" webkitallowfullscreen="" allowfullscreen="" frameborder="no" width="320" height="302" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-</div>*@
 <div class="mx-auto tr-bgblue tr-height p-4 m-1 ">
-    @*    <div class="row mx-auto ">
-    <div class="text-center ">
-    <span class=" bg-light p-4">
-    <span class="tr-fcblue tr-fs50 "><b>anglian</b></span>
-    <span class="tr-fs50 tr-fclblue "><b>water</b></span>
-    </span>
-    </div>
-    </div>*@
-    <div class="row mx-auto tr-height1">
+   
+    <div class="row mx-auto tr-height1 bg-white">
         <div class="col-12 col-md-12 col-lg-9">
             <div class="card text-center " style="background:snow">
                 <div class="card-body" style="width: 100%">
                     <iframe src="https://video.ibm.com/embed/24088760?autoplay=true"
-                            style="border: 0;" webkitallowfullscreen="" allowfullscreen="" frameborder="no" class="tr-iframe-stream" height="410"
+                            style="border: 0;" webkitallowfullscreen="" allowfullscreen="" frameborder="no" class="tr-iframe-stream" 
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-12 col-lg-3 text-center" style="color: hsl(302deg 33% 54%); font-size: small; text-align: justify;">
+        <div class="col-12 col-md-12 col-lg-3 text-center bg-white" style="color: hsl(302deg 33% 54%); font-size: small; text-align: justify;">
             <iframe src="https://video.ibm.com/socialstream/24088760?videos=0&amp;theme=g10&amp;messageVerticalSpacing=default&amp;mainLinkColor=0f62fe&amp;moderatorNameColor=d12771"
-                    style="border: 0;" webkitallowfullscreen="" allowfullscreen="" frameborder="no" class="tr-iframe-stream" height="450"
+                    style="border: 0;" webkitallowfullscreen="" allowfullscreen="" frameborder="no" class="tr-iframe-stream"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
 </div>
+
 <div class="tr-footer">
     <div class="row ">
         <div class="col-12 col-md-12 col-lg-2">
@@ -125,65 +111,6 @@
     </div>
 </div>
 
+</div>
 
 
-
-@code {
-
-}
-<style>
-    .tr-suffix {
-        font-size: 10px;
-    }
-
-    .tr-fs13 {
-        font-size: 13.5px;
-    }
-
-    .tr-fs50 {
-        font-size: 50px;
-    }
-
-    .ts-grey {
-        background-color: #c4c0c0;
-    }
-
-    .ts-yellow {
-        background-color: #fcfca7;
-        border-color: #c4c0c0;
-    }
-
-    .tr-footer {
-        /*position: fixed;*/
-        padding: 10px 5px 10px 10px;
-        /*bottom: 0;*/
-        width: 100%;
-        /* Height of the footer*/
-        /*height: 40px;*/
-        background: white;
-    }
-
-    .tr-fcblue {
-        color: #2089ba;
-    }
-
-    .tr-fclblue {
-        color: #91d9ed;
-    }
-
-    .tr-bgblue {
-        background-color: #2089ba;
-    }
-
-    .tr-iframe-stream{
-        width: 100%;
-    }
-
-/*    .tr-height {
-        height: 500px;
-    }
-
-    .tr-height1 {
-        height: 400px;
-    }*/
-</style>
