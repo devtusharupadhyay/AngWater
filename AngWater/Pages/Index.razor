@@ -1,89 +1,98 @@
 ﻿@page "/"
 @layout EmptyLayout
 
+<div>
 
-<div class="">
+    <img src="images/newloginbackground.jpg" class="img-fluid position-relative" />
 
-    <div class="mt-5">
-        <div class="row">
-            <div class="col-12 col-md-1 col-lg-2">
-            </div>
-            <div class="col-12 col-md-10 col-lg-8">
-                <div class="shadow bg-white rounded-0 border-2 border-dark pb-5 p-2">
-                    <div class="row">
-                        <div class="col-12 col-lg-7">
+    <div class="position-absolute top-25">
+        <div class="mt-5">
+            <div class="row mx-auto">
+                <div class="col-12 col-md-1 col-lg-2">
+                </div>
+                <div class="col-12 col-md-10 col-lg-8">
+                    <div class="shadow bg-white rounded-0 border-2 border-dark pb-5 p-2">
+                        <div class="row mx-auto">
+                            <div class="col-12 col-lg-7">
 
-                            <EditForm OnValidSubmit="LoginUser" Model="_loginViewModel">
-                                <DataAnnotationsValidator />
-                                <div class="shadow bg-white rounded-0 border-2 border-dark pb-5 p-4 m-5">
-                                    <h4>
-                                        Please login to proceed
-                                    </h4>
-                                    <div class="mb-2">
-                                        <span class="d-inline">
-                                            Name
-                                            <input type="text" class="form-control d-inline" @bind-value="_loginViewModel.Name" />
-                                        </span>
+                                <EditForm OnValidSubmit="LoginUser" Model="_loginViewModel">
+                                    <DataAnnotationsValidator />
+                                    <div class="shadow bg-white rounded-0 border-2 border-dark pb-5 p-4 m-5">
+                                        <h4>
+                                            Please login to proceed
+                                        </h4>
+                                        <div class="mb-2">
+                                            <span class="d-inline">
+                                                Name
+                                                <input type="text" class="form-control d-inline" @bind-value="_loginViewModel.Name" />
+                                            </span>
+                                            <div>
+                                                <ValidationMessage For="() => _loginViewModel.Name" />
+
+                                            </div>
+
+                                        </div>
+                                        <span class="d-inline">Email Address</span>
+                                        <input type="email" class="form-control" @bind-value="_loginViewModel.EmailAddress" />
+
                                         <div>
-                                            <ValidationMessage For="() => _loginViewModel.Name" />
+                                            <ValidationMessage For="() => _loginViewModel.EmailAddress" />
+                                        </div>
 
+                                        <div class="text-center mt-4">
+                                            <button type="submit" class="btn tr-btn mb-5">Login</button>
                                         </div>
 
                                     </div>
-                                    <span class="d-inline">Email Address</span>
-                                    <input type="email" class="form-control" @bind-value="_loginViewModel.EmailAddress" />
+                                </EditForm>
 
-                                    <div>
-                                        <ValidationMessage For="() => _loginViewModel.EmailAddress" />
-                                    </div>
-
-                                    <div class="text-center mt-4">
-                                        <button type="submit" class="btn tr-btn mb-5">Login</button>
-                                    </div>
-
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="p-4">
+                                    <h4 class="tr-purple">Help text and information</h4>
+                                    <span class="tr-purple mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
                                 </div>
-                            </EditForm>
 
-                        </div>
-                        <div class="col-12 col-lg-5">
-                            <div class="p-4">
-                                <h4 class="tr-purple">Help text and information</h4>
-                                <span class="tr-purple mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+
                             </div>
 
-
                         </div>
 
-                    </div>
+                        <div class="row">
+                            <div class="col-6">
 
-                    <div class="row">
-                        <div class="col-6">
+                                <label class="my-auto"><b>Happier. <br /> Healthier.<br /> Safer.</b></label>
 
-                            <label class="my-auto"><b>Happier. <br /> Healthier.<br /> Safer.</b></label>
-
-                            <span>
-                                <img src="images/logo_life_circle.png" />
-                            </span>
-                        </div>
-                        <div class="col-6">
-                            <div class="align-bottom float-end">
-                                <img src="images/logo_love-every-drop.png" style="height:100px;" />
+                                <span>
+                                    <img src="images/logo_life_circle.png" />
+                                </span>
+                            </div>
+                            <div class="col-6">
+                                <div class="align-bottom float-end">
+                                    <img src="images/logo_love-every-drop.png" style="height:100px;" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-1 col-lg-2">
+                <div class="col-12 col-md-1 col-lg-2">
+                </div>
             </div>
         </div>
+
+
     </div>
 
 
 </div>
 
 <style>
-    body{
-        background-image: url('images/login_background.jpg');
+    .top-25{
+        top: 25%;
+        z-index: 1000;
+    }
+
+    .responsive {
     }
 </style>
 
