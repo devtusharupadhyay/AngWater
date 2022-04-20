@@ -13,6 +13,7 @@ namespace AngWater
 
         public DbSet<Log> Logs { get; set; }
 
+        public DbSet<Schedule> Schedule { get; set; }
 
     }
 }
