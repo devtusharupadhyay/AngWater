@@ -7,9 +7,9 @@ namespace AngWater.Models
         [Required]
         public string Speaker { get; set; }
 
-        public TimeOnly StartTime { get; set; }
+        public DateTime StartTime { get; set; }
 
-        public TimeOnly EndTime { get; set; }
+        public DateTime EndTime { get; set; }
 
         public short Channel { get; set; }
     }
