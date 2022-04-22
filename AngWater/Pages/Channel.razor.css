@@ -18,6 +18,11 @@
     background-color: #fcfca7;
     border-color: #c4c0c0;
 }
+.ts-orange {
+    background-color: #faac5a;
+   /* background-color: #FFA500;*/
+    border-color: #c4c0c0;
+}
 
 .tr-footer {
     padding: 10px 5px 10px 10px;
